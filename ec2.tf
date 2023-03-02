@@ -1,6 +1,6 @@
 # Create EC2
 resource "aws_instance" "tf_demo" {
-  count                  = 3
+  count                  = 2
   ami                    = "ami-0b5eea76982371e91"
   key_name               = "demo-keypair"
   subnet_id              = aws_subnet.pub_subnet.id
